@@ -1,6 +1,10 @@
 # FFmpeg2AndroidDemo
 This is a compilation of **Android** available under the **FFmpeg** project, containing code examples.<br>
 
+This project is forked from https://github.com/mabeijianxi/FFmpeg4Android
+
+
+
 
 中文说明看 README_CN.md
 ## The project includes:
@@ -9,7 +13,6 @@ This is a compilation of **Android** available under the **FFmpeg** project, con
 > * Libx264 Full Platform Compilation Script
 > * Compiled Good Version of the SO library (download in ffmpeg3.2.5 / android)
 > * Compiled Rich Version of the SO library (download in ffmpeg3.2.5 / android_more)> * CMake Compile FFmpeg as the script which can be command
-> * Android command executes the interface of FFmpeg
 > * Android Use Case
 
 ## Compile 
@@ -35,7 +38,6 @@ are installed
 	libperl5.14
 	, too.
 )
-autoreconf -ivf 
+And then run
+  autoreconf -ivf 
 
-## More
-You can visit some of my related articles to access my ideas. Related articles are:[编译Android下可用的FFmpeg\(包含libx264与libfdk-aac\)](http://blog.csdn.net/mabeijianxi/article/details/74544879)、[编译Android下可执行命令的FFmpeg](http://blog.csdn.net/mabeijianxi/article/details/72904694)

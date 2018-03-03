@@ -1,6 +1,7 @@
 # FFmpeg2AndroidDemo
 
-
+Forked from https://github.com/mabeijianxi/FFmpeg4Android
+原项目太大，文件有点乱，所以新建了。
 
 ## 编译
 1. 修改 settings.sh ，使之对应你的构建环境。包括NDK路径等。
@@ -11,5 +12,20 @@
 直接运行即可
 
 
-## 更多
-你可以访问我的一些相关文章来查阅我的思路,相关文章有:[编译Android下可用的FFmpeg\(包含libx264与libfdk-aac\)](http://blog.csdn.net/mabeijianxi/article/details/74544879)、[编译Android下可执行命令的FFmpeg](http://blog.csdn.net/mabeijianxi/article/details/72904694)
+## FAQ
+1. 'aclocal-1.15' is missing on your system.  (Ubuntu)
+保证下列已安装:
+	autotools-dev
+	automake
+	autoconf2.13
+	m4
+	
+(如果还不够，装就要装以下 
+	perl
+	libperl5.14
+	, too.
+)
+最后运行
+autoreconf -ivf 
+
+
