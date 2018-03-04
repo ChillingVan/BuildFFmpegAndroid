@@ -30,7 +30,7 @@ FF_CFLAGS="-O3 -Wall -pipe \
 -DANDROID  "
 PREFIX=$basepath/$BUILD_FOLDER_NAME/$CPU
 
-pushd ../ffmpeg-3.2.5
+pushd $FFMPEG_DIR
 export TMPDIR=./ffmpegtemp
 
 rm "./compat/strtod.o"

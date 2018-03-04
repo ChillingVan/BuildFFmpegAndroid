@@ -10,3 +10,5 @@ FDK_LIB=$basepath/$FDK_AAC_DIR/$BUILD_FOLDER_NAME/$CPU/lib
 X264_INCLUDE=$basepath/libx264/$BUILD_FOLDER_NAME/$CPU/include
 
 X264_LIB=$basepath/libx264/$BUILD_FOLDER_NAME/$CPU/lib
+
+FFMPEG_DIR=$basepath/../ffmpeg-3.2.5
