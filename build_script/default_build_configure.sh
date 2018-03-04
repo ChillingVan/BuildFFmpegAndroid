@@ -59,6 +59,7 @@ build_one(){
 --enable-protocols \
 --enable-zlib \
 --enable-avfilter \
+--enable-avdevice \
 --disable-outdevs \
 --disable-ffprobe \
 --disable-ffplay \
@@ -69,7 +70,6 @@ build_one(){
 --disable-ffplay \
 --disable-ffmpeg \
 --disable-postproc \
---disable-avdevice \
 --disable-symver \
 --disable-stripping \
 --extra-cflags="$FF_EXTRA_CFLAGS  $FF_CFLAGS" \
