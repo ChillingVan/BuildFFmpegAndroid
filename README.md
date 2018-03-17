@@ -1,43 +1,36 @@
 # FFmpeg2AndroidDemo
-This is a compilation of **Android** available under the **FFmpeg** project, containing code examples.<br>
 
-This project is forked from https://github.com/mabeijianxi/FFmpeg4Android
+Forked from https://github.com/mabeijianxi/FFmpeg4Android
+原项目太大，文件有点乱，所以新建了。
 
+## 编译
+0. 修改ffmpeg.settings的ffmpeg路径，可以直接git submodule update来拉取最新的FFmpeg
+  ffmpeg 大，clone速度慢，可以尝试https://gitee.com/ChillingVan/FFmpeg
+1. 修改 settings.sh ，使之对应你的构建环境。包括NDK路径等。
+2. 运行 {jianxi_ffmpeg_build_all.sh [build_configure_sh] [skip_build_dependancy]}。也可以一个一个.sh文件运行来构建。
 
+## 注意
+不同版本的ffmpeg的configure不一样。如果有报错，请尝试修改各个build_configure.sh来实现。
+目前我只在3.2.5和3.4测试过，其它版本请修改configure参数。
 
+## 例子：
+直接运行即可
 
-中文说明看 README_CN.md
-## The project includes:
-> * FFmpeg Full Platform Compilation Script
-> * Libx264 Full Platform Compilation Script
-> * Libx264 Full Platform Compilation Script
-> * Compiled Good Version of the SO library (download in ffmpeg3.2.5 / android)
-> * Compiled Rich Version of the SO library (download in ffmpeg3.2.5 / android_more)> * CMake Compile FFmpeg as the script which can be command
-> * Android Use Case
-
-## Compile 
-1. Change the settings.sh to match your OS and NDK build tools.
-
-2. Run {jianxi_ffmpeg_build_all.sh [build_configure_sh] [skip_build_dependancy]} for all, or you can just run .sh files one by one.
-
-## Announcements
-* This project script is generic, but you may modify some of the paths defined in the script or keep my directory structure, otherwise it will be unsuccessful when executing <br>
-* If you download from the official website, then you need to follow my blog or other online tutorials on **FFmpeg** and **libfdk-aac** to make the changes, or there may exit some problem
 
 ## FAQ
-1. 'aclocal-1.15' is missing on your system.  
-Make sure:
+1. 'aclocal-1.15' is missing on your system.  (Ubuntu)
+保证下列已安装:
 	autotools-dev
 	automake
 	autoconf2.13
 	m4
 	
-are installed
-(I am not sure whether these are enough, if not, install 
+(如果还不够，装就要装以下 
 	perl
 	libperl5.14
 	, too.
 )
-And then run
-  autoreconf -ivf 
+最后运行
+autoreconf -ivf 
+
 

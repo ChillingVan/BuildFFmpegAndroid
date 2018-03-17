@@ -1,3 +1,4 @@
+mkdir ffmpegtemp
 
 build_one(){
 ./configure \
@@ -20,7 +21,6 @@ build_one(){
 --enable-version3 \
 --enable-pthreads \
 --enable-small \
---disable-vda \
 --disable-iconv \
 --disable-encoders \
 --enable-libx264 \
@@ -62,7 +62,6 @@ build_one(){
 --disable-ffprobe \
 --disable-ffplay \
 --disable-ffmpeg \
---disable-ffserver \
 --disable-debug \
 --disable-ffprobe \
 --disable-ffplay \

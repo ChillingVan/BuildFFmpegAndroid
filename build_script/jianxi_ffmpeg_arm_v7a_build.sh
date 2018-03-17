@@ -10,6 +10,7 @@ echo start $0 .........
 CPU=arm
 . ffmpeg_settings.sh
 BUILD_CONFIGURE_SH=$1
+echo $BUILD_CONFIGURE_SH
 
 basepath=$(cd `dirname $0`; pwd)
 NDK=$ANDROID_NDK_ROOT_PATH

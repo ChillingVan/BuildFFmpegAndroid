@@ -1,3 +1,4 @@
+mkdir ffmpegtemp
 
 build_one(){
 ./configure \
