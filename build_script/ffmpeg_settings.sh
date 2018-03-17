@@ -11,4 +11,4 @@ X264_INCLUDE=$basepath/libx264/$BUILD_FOLDER_NAME/$CPU/include
 
 X264_LIB=$basepath/libx264/$BUILD_FOLDER_NAME/$CPU/lib
 
-FFMPEG_DIR=$basepath/../ffmpeg-3.2.5
+FFMPEG_DIR=$basepath/../FFmpeg
