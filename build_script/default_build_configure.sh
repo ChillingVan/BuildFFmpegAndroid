@@ -81,3 +81,5 @@ build_one
 make clean
 make -j$NUMBER_OF_CORES
 make install
+
+cp $FDK_LIB/libfdk-aac.so $PREFIX/lib

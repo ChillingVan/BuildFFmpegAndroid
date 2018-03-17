@@ -43,6 +43,5 @@ else
 fi
 
 popd
-cp $FDK_LIB/libfdk-aac.so $PREFIX/lib
 
 

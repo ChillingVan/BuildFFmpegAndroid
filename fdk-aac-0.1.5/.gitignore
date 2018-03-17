@@ -8,6 +8,7 @@
 *.exe
 *.def
 *.lib
+.libs
 *.pdb
 *.mo
 *.o
@@ -52,3 +53,7 @@ dataDec.txt
 log.dec
 common/oclobj.h
 x264_lookahead.clbin
+libtool
+config.status
+Makefile
+
