@@ -13,6 +13,8 @@ Forked from https://github.com/mabeijianxi/FFmpeg4Android
 不同版本的ffmpeg的configure不一样。如果有报错，请尝试修改各个build_configure.sh来实现。
 目前我只在3.2.5和3.4测试过，其它版本请修改configure参数。
 
+configure各个参数就不说明了，在ffmpeg的configure文件里有详细的说明.
+
 ## 例子：
 直接运行即可
 
